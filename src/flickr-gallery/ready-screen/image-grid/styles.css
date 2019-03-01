@@ -1,0 +1,58 @@
+.fg-image-grid {
+  display: block;
+  width: 100%;
+}
+
+.fg-image-grid:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.fg-image-grid-cell {
+  display: block;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  float: left;
+  cursor: pointer;
+ transition: opacity 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  .fg-image-grid-cell {
+    width: 20%;
+  }
+}
+
+.fg-image-grid-cell:hover {
+  opacity: 0.5;
+}
+
+.fg-image-grid-item {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fg-image-grid-img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.fg-image-grid-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}

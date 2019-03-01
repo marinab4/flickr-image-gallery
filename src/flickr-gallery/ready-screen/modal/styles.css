@@ -1,0 +1,141 @@
+.fg-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.fg-modal-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fg-modal-dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  width: 300px;
+  height: 300px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.fg-modal-loading-screen {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fq-modal-is-ready .fg-modal-loading-screen {
+  display: none;
+}
+
+.fq-modal-ready-screen {
+  position: relative;
+  display: none;
+}
+
+.fq-modal-is-ready .fq-modal-ready-screen {
+  display: block;
+}
+
+.fg-modal-image-preloader {
+  display: block;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
+  overflow: hidden;
+}
+
+.fq-modal-image-container {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.fq-modal-image-container img {
+  width: 100%;
+}
+
+.fg-modal-close-button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.fg-modal-close-button:before {
+  content: 'x';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+}
+
+/*
+.fg-modal-bg {
+  position: fixed;
+  z-index: 100000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fg-popup {
+  position: absolute;
+  z-index: 100001;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+
+  display: block;
+  box-sizing: border-box;
+
+  padding: 100px;
+}
+
+.fg-popup-content {
+  position: relative;
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+
+
+.fg-popup-img-container {
+  display: block;
+  width: 100%;
+}
+
+.fg-popup-img-container img {
+  width: 100%;
+}
+*/

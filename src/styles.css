@@ -1,0 +1,13 @@
+/* a simplest CSS reset */
+html,
+body {
+  margin: 0;
+}
+
+/* gallery container */
+.gallery-container {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
